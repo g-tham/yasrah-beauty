@@ -56,20 +56,6 @@ export default function PoliciesPage() {
               <p className="eyebrow text-ink/45">Bridal Policy</p>
               <h2 className="mt-4 font-display text-4xl leading-none sm:text-5xl">Cancellation Policy</h2>
 
-              <div className="mt-8 grid grid-cols-3 gap-3">
-                <div className="border-t border-ink/15 pt-4">
-                  <div className="font-display text-3xl">30</div>
-                  <div className="mt-1 text-[10px] uppercase tracking-[0.18em] text-ink/45">Days</div>
-                </div>
-                <div className="border-t border-ink/15 pt-4">
-                  <div className="font-display text-3xl">Email</div>
-                  <div className="mt-1 text-[10px] uppercase tracking-[0.18em] text-ink/45">Written Notice</div>
-                </div>
-                <div className="border-t border-ink/15 pt-4">
-                  <div className="font-display text-3xl">2</div>
-                  <div className="mt-1 text-[10px] uppercase tracking-[0.18em] text-ink/45">Weeks</div>
-                </div>
-              </div>
             </div>
 
             <div className="border-t border-ink/15 lg:border-t-0">
