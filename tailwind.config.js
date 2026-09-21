@@ -12,7 +12,7 @@ export default {
         bone: '#f1eee8',
         ash: '#c8c2b8',
         taupe: '#8c8378',
-        smoke: '#2a2927',
+        smoke: '#54514d',
         champagne: '#b4a087'
       },
       letterSpacing: {

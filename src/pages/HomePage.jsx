@@ -5,15 +5,15 @@ import Reveal from '../components/Reveal'
 export default function HomePage() {
   return (
     <>
-      <section className="relative min-h-[82vh] overflow-hidden bg-ink text-bone">
+      <section className="relative min-h-[82vh] overflow-hidden bg-smoke text-bone">
         <PlaceholderImage label="Hero bridal editorial" className="absolute inset-0" />
-        <div className="absolute inset-0 z-[1] bg-gradient-to-r from-black/70 via-black/25 to-black/10" />
+        <div className="absolute inset-0 z-[1] bg-gradient-to-r from-black/45 via-black/15 to-transparent" />
         <div className="relative z-10 mx-auto flex min-h-[82vh] max-w-7xl items-end px-5 pb-14 pt-24 lg:px-8 lg:pb-20">
           <div className="max-w-4xl">
-            <p className="eyebrow text-bone/65">Bridal Artistry · Clinical Aesthetics</p>
-            <h1 className="display-title mt-4">Beauty, authentically yours.</h1>
-            <p className="mt-6 max-w-xl text-sm leading-7 text-bone/75 sm:text-base">A refined beauty experience designed to make every client feel embraced, valued and celebrated in their own unique essence.</p>
-            <div className="mt-9 flex flex-wrap gap-3">
+            <p className="hero-kicker eyebrow text-bone/70">Bridal Artistry · Clinical Aesthetics</p>
+            <h1 className="hero-title display-title mt-4">Beauty, authentically yours.</h1>
+            <p className="hero-copy mt-6 max-w-xl text-sm leading-7 text-bone/80 sm:text-base">A refined beauty experience designed to make every client feel embraced, valued and celebrated in their own unique essence.</p>
+            <div className="hero-actions mt-9 flex flex-wrap gap-3">
               <Link to="/inquire" className="btn-light">Inquire Now</Link>
               <Link to="/services/bridal" className="btn-light">Explore Services</Link>
             </div>
@@ -43,7 +43,7 @@ export default function HomePage() {
           </Reveal>
           <div className="grid gap-6 md:grid-cols-2">
             <Reveal>
-              <Link to="/services/bridal" className="group block">
+              <Link to="/services/bridal" className="luxury-card group block">
                 <PlaceholderImage label="Bridal makeup & hair" className="aspect-[4/5]" />
                 <div className="mt-5 flex items-center justify-between gap-5">
                   <div><p className="eyebrow text-bone/45">01</p><h3 className="mt-2 font-display text-4xl">Bridal Makeup & Hair</h3></div>
@@ -52,7 +52,7 @@ export default function HomePage() {
               </Link>
             </Reveal>
             <Reveal>
-              <Link to="/services/clinical" className="group block md:mt-16">
+              <Link to="/services/clinical" className="luxury-card group block md:mt-16">
                 <PlaceholderImage label="Clinical aesthetics" className="aspect-[4/5]" />
                 <div className="mt-5 flex items-center justify-between gap-5">
                   <div><p className="eyebrow text-bone/45">02</p><h3 className="mt-2 font-display text-4xl">Clinical Aesthetics</h3></div>

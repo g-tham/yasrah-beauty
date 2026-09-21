@@ -48,14 +48,14 @@ export default function Header() {
                   <SiteLink to="/services" className="block px-3 py-2 text-xs hover:bg-white/40">All Services</SiteLink>
                   <SiteLink to="/services/bridal" className="block px-3 py-2 text-xs hover:bg-white/40">Bridal Makeup & Hair</SiteLink>
                   <SiteLink to="/services/clinical" className="block px-3 py-2 text-xs hover:bg-white/40">Clinical Aesthetics</SiteLink>
-                  <div className="px-3 py-2 text-xs text-ink/35">Waxing & Threading · Later</div>
+                  <div className="cursor-not-allowed px-3 py-2 text-xs text-ink/30" aria-disabled="true">Waxing & Threading</div>
                 </div>
               </div>
             )}
           </div>
 
           <SiteLink to="/portfolio" className={navClass('/portfolio')}>Portfolio</SiteLink>
-          <SiteLink to="/courses" className={navClass('/courses')}>Courses</SiteLink>
+          <span className="cursor-not-allowed text-[11px] uppercase tracking-[0.18em] text-ink/25" aria-disabled="true">Courses</span>
           <SiteLink to="/inquire" className="btn-dark !px-5 !py-3">Inquire Now</SiteLink>
         </nav>
 
@@ -77,7 +77,7 @@ export default function Header() {
               <SiteLink onClick={closeMobile} to="/services/clinical">Clinical Aesthetics</SiteLink>
             </div>
             <SiteLink onClick={closeMobile} to="/portfolio">Portfolio</SiteLink>
-            <SiteLink onClick={closeMobile} to="/courses">Courses</SiteLink>
+            <span className="cursor-not-allowed text-ink/30" aria-disabled="true">Courses</span>
             <SiteLink onClick={closeMobile} to="/inquire" className="btn-dark mt-2 w-full">Inquire Now</SiteLink>
           </div>
         </div>

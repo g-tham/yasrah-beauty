@@ -8,7 +8,7 @@ const clinicalTreatments = ['Laser Hair Removal','Laser Skin Rejuvenation','Micr
 export default function ServicesPage() {
   return (
     <>
-      <PageHero eyebrow="Services" title="Beauty, considered from every angle." body="Explore Yasrah Beauty’s current service categories: Bridal Makeup & Hair and Clinical Aesthetics. Waxing & Threading is reserved for a later phase of the website." />
+      <PageHero eyebrow="Services" title="Beauty, considered from every angle." body="Explore Yasrah Beauty’s current service categories: Bridal Makeup & Hair and Clinical Aesthetics." />
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
         <div className="grid gap-8 lg:grid-cols-2">
@@ -63,17 +63,6 @@ export default function ServicesPage() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-24">
-        <div className="surface grid gap-8 p-8 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
-          <div>
-            <p className="eyebrow text-ink/45">Future Service</p>
-            <h3 className="mt-3 font-display text-4xl">Waxing & Threading</h3>
-            <p className="body-copy mt-4 max-w-2xl">The original brief notes this service for a later build, so the full page is intentionally not published yet.</p>
-          </div>
-          <Link to="/inquire" className="btn-dark">Inquire Now</Link>
         </div>
       </section>
     </>

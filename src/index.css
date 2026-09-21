@@ -30,13 +30,61 @@ button, input, textarea, select { font: inherit; }
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(circle at 20% 20%, rgba(241,238,232,.28), transparent 30%),
-    radial-gradient(circle at 80% 70%, rgba(180,160,135,.24), transparent 32%),
-    linear-gradient(145deg, #4b4a47 0%, #262522 55%, #11110f 100%);
+    radial-gradient(circle at 20% 20%, rgba(241,238,232,.32), transparent 30%),
+    radial-gradient(circle at 80% 70%, rgba(180,160,135,.28), transparent 32%),
+    linear-gradient(145deg, #78736d 0%, #58544f 55%, #3d3a36 100%);
+  transition: transform 1.1s cubic-bezier(.22,1,.36,1), filter 1.1s cubic-bezier(.22,1,.36,1);
 }
 .placeholder-image::after {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgba(0,0,0,.38), transparent 60%);
+}
+
+
+/* Luxury motion */
+@keyframes luxeRise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-kicker { animation: luxeRise .7s cubic-bezier(.22,1,.36,1) both; }
+.hero-title { animation: luxeRise .9s .08s cubic-bezier(.22,1,.36,1) both; }
+.hero-copy { animation: luxeRise .9s .18s cubic-bezier(.22,1,.36,1) both; }
+.hero-actions { animation: luxeRise .9s .28s cubic-bezier(.22,1,.36,1) both; }
+
+.luxury-card .placeholder-image {
+  transform: scale(1);
+  filter: saturate(.94) contrast(.98);
+}
+.luxury-card:hover .placeholder-image {
+  transform: scale(1.018);
+  filter: saturate(1) contrast(1.02);
+}
+
+header nav a {
+  position: relative;
+}
+header nav a:not(.btn-dark)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background: #b4a087;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .55s cubic-bezier(.22,1,.36,1);
+}
+header nav a:not(.btn-dark):hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-kicker, .hero-title, .hero-copy, .hero-actions { animation: none; }
+  .luxury-card .placeholder-image { transition: none; }
+  header nav a::after { transition: none; }
 }
