@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #171715;
+  background: #f1eee8;
+  font-family: Inter, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #f1eee8; }
+button, input, textarea, select { font: inherit; }
+::selection { background: #b4a087; color: #171715; }
+
+@layer components {
+  .eyebrow { @apply text-[10px] sm:text-xs uppercase tracking-[0.28em] font-medium; }
+  .display-title { @apply font-display text-5xl sm:text-6xl lg:text-8xl font-medium leading-[0.92]; }
+  .section-title { @apply font-display text-4xl sm:text-5xl lg:text-6xl leading-none; }
+  .body-copy { @apply text-sm sm:text-base leading-7 text-ink/70; }
+  .btn-dark { @apply inline-flex items-center justify-center px-6 py-3.5 bg-ink text-bone text-xs uppercase tracking-[0.2em] transition hover:bg-smoke; }
+  .btn-light { @apply inline-flex items-center justify-center px-6 py-3.5 border border-bone/60 text-bone text-xs uppercase tracking-[0.2em] transition hover:bg-bone hover:text-ink; }
+  .btn-outline { @apply inline-flex items-center justify-center px-6 py-3.5 border border-ink/25 text-ink text-xs uppercase tracking-[0.2em] transition hover:bg-ink hover:text-bone; }
+  .surface { @apply bg-white/40 border border-ink/10; }
+}
+
+.placeholder-image {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(241,238,232,.28), transparent 30%),
+    radial-gradient(circle at 80% 70%, rgba(180,160,135,.24), transparent 32%),
+    linear-gradient(145deg, #4b4a47 0%, #262522 55%, #11110f 100%);
+}
+.placeholder-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.38), transparent 60%);
+}
