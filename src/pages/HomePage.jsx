@@ -16,6 +16,7 @@ export default function HomePage() {
             <div className="hero-actions mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link to="/inquire" className="btn-light w-full sm:w-auto">Inquire Now</Link>
               <Link to="/services/bridal" className="btn-light w-full sm:w-auto">Explore Bridal</Link>
+              <Link to="/services/clinical" className="btn-light w-full sm:w-auto">Explore Aesthetics</Link>
             </div>
           </div>
         </div>
