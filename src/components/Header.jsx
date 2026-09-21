@@ -38,14 +38,18 @@ export default function Header() {
           </div>
 
           <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-            <div className="flex items-center gap-1.5">
-              <SiteLink to="/services" className={navClass('/services')}>Services</SiteLink>
-              <button onClick={() => setServicesOpen(v => !v)} className="text-[10px] text-ink/45" aria-label="Open Services menu">⌄</button>
-            </div>
+            <button
+              onClick={() => setServicesOpen(v => !v)}
+              className={`flex items-center gap-1.5 text-[11px] uppercase tracking-[0.18em] transition ${location.pathname.startsWith('/services/') ? 'text-ink' : 'text-ink/60 hover:text-ink'}`}
+              aria-expanded={servicesOpen}
+              aria-label="Open Services menu"
+            >
+              <span>Services</span>
+              <span className="text-[10px] text-ink/45">⌄</span>
+            </button>
             {servicesOpen && (
               <div className="absolute left-1/2 top-full w-64 -translate-x-1/2 pt-5">
                 <div className="border border-ink/10 bg-bone p-3 shadow-soft">
-                  <SiteLink to="/services" className="block px-3 py-2 text-xs hover:bg-white/40">All Services</SiteLink>
                   <SiteLink to="/services/bridal" className="block px-3 py-2 text-xs hover:bg-white/40">Bridal Makeup & Hair</SiteLink>
                   <SiteLink to="/services/clinical" className="block px-3 py-2 text-xs hover:bg-white/40">Clinical Aesthetics</SiteLink>
                   <div className="cursor-not-allowed px-3 py-2 text-xs text-ink/30" aria-disabled="true">Waxing & Threading</div>
@@ -71,7 +75,7 @@ export default function Header() {
               <SiteLink onClick={closeMobile} to="/faq">FAQ</SiteLink>
               <SiteLink onClick={closeMobile} to="/policies">Policies</SiteLink>
             </div>
-            <SiteLink onClick={closeMobile} to="/services">Services</SiteLink>
+            <div className="text-sm uppercase tracking-[0.16em] text-ink/55">Services</div>
             <div className="ml-4 grid gap-3 border-l border-ink/10 pl-4 text-sm text-ink/60">
               <SiteLink onClick={closeMobile} to="/services/bridal">Bridal Makeup & Hair</SiteLink>
               <SiteLink onClick={closeMobile} to="/services/clinical">Clinical Aesthetics</SiteLink>

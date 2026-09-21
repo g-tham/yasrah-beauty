@@ -15,7 +15,7 @@ export default function HomePage() {
             <p className="hero-copy mt-6 max-w-xl text-sm leading-7 text-bone/80 sm:text-base">A refined beauty experience designed to make every client feel embraced, valued and celebrated in their own unique essence.</p>
             <div className="hero-actions mt-9 flex flex-wrap gap-3">
               <Link to="/inquire" className="btn-light">Inquire Now</Link>
-              <Link to="/services/bridal" className="btn-light">Explore Services</Link>
+              <Link to="/services/bridal" className="btn-light">Explore Bridal</Link>
             </div>
           </div>
         </div>

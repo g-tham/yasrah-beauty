@@ -21,7 +21,6 @@ export default function Footer() {
           <div className="space-y-3 text-sm text-bone/70">
             <div className="eyebrow !text-bone/45">Explore</div>
             <SiteLink className="block hover:text-bone" to="/about">About</SiteLink>
-            <SiteLink className="block hover:text-bone" to="/services">Services</SiteLink>
             <SiteLink className="block hover:text-bone" to="/services/bridal">Bridal</SiteLink>
             <SiteLink className="block hover:text-bone" to="/services/clinical">Clinical Aesthetics</SiteLink>
             <SiteLink className="block hover:text-bone" to="/portfolio">Portfolio</SiteLink>

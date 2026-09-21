@@ -6,7 +6,6 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import FAQPage from './pages/FAQPage'
 import PoliciesPage from './pages/PoliciesPage'
-import ServicesPage from './pages/ServicesPage'
 import BridalPage from './pages/BridalPage'
 import ClinicalPage from './pages/ClinicalPage'
 import PortfolioPage from './pages/PortfolioPage'
@@ -34,7 +33,6 @@ export default function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/policies" element={<PoliciesPage />} />
-          <Route path="/services" element={<ServicesPage />} />
           <Route path="/services/bridal" element={<BridalPage />} />
           <Route path="/services/clinical" element={<ClinicalPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />

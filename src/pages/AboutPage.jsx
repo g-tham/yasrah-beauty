@@ -18,7 +18,6 @@ export default function AboutPage() {
           <p className="body-copy mt-6">The mission of Yasrah Beauty is to create a space where every individual feels embraced, valued and celebrated for their unique essence.</p>
           <p className="body-copy mt-4">Its vision is to set a standard where beauty becomes an expression of authenticity — not something that replaces it.</p>
           <div className="mt-9 flex flex-wrap gap-3">
-            <Link to="/services" className="btn-dark">Explore Services</Link>
             <Link to="/inquire" className="btn-outline">Inquire Now</Link>
           </div>
         </Reveal>
