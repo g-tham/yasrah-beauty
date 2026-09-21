@@ -26,14 +26,14 @@ const treatments = [
 function Treatment({ t }) {
   const [open, setOpen] = useState(false)
   return (
-    <article className="border-t border-ink/15 py-8">
-      <button onClick={() => setOpen(!open)} className="flex w-full items-start justify-between gap-6 text-left">
-        <div><p className="eyebrow text-ink/40">Treatment</p><h2 className="mt-2 font-display text-4xl sm:text-5xl">{t.name}</h2></div>
-        <span className="mt-4 text-2xl">{open ? '−' : '+'}</span>
+    <article className="border-t border-ink/15 py-6 sm:py-8">
+      <button onClick={() => setOpen(!open)} className="group flex w-full items-center justify-between gap-5 py-1 text-left">
+        <div><p className="eyebrow text-ink/40">Treatment</p><h2 className="mt-2 font-display text-3xl sm:text-5xl">{t.name}</h2><p className="mt-2 text-[10px] uppercase tracking-[0.2em] text-ink/35">View details</p></div>
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-ink/15 text-xl transition group-hover:border-ink/35">{open ? '−' : '+'}</span>
       </button>
-      <p className="body-copy mt-5 max-w-3xl">{t.summary}</p>
+      <p className="body-copy mt-4 max-w-3xl">{t.summary}</p>
       {open && (
-        <div className="mt-8 grid gap-10 md:grid-cols-2">
+        <div className="mt-6 grid gap-7 border-t border-ink/10 pt-6 md:grid-cols-2 md:gap-10">
           <div><p className="eyebrow text-ink/45">Benefits</p><ul className="mt-4 space-y-3 text-sm leading-6 text-ink/70">{t.benefits.map(x => <li key={x} className="border-b border-ink/10 pb-3">{x}</li>)}</ul></div>
           <div><p className="eyebrow text-ink/45">Pricing</p><ul className="mt-4 space-y-3 text-sm leading-6 text-ink/70">{t.pricing.map(x => <li key={x} className="border-b border-ink/10 pb-3">{x}</li>)}</ul></div>
         </div>
@@ -46,12 +46,12 @@ export default function ClinicalPage() {
   return (
     <>
       <PageHero eyebrow="Clinical Aesthetics" title="Where science meets holistic practice." body="Thoughtfully selected aesthetic treatments with a focus on education, care and an elevated client experience." />
-      <section className="mx-auto max-w-6xl px-5 py-16 lg:px-8 lg:py-24">
+      <section className="mx-auto max-w-6xl px-5 py-12 sm:py-16 lg:px-8 lg:py-24">
         {treatments.map(t => <Treatment key={t.name} t={t} />)}
-        <div className="mt-12 grid gap-4 md:grid-cols-2">
-          {['Dermaplaning','Radio Frequency'].map(name => <div key={name} className="surface p-7"><p className="eyebrow text-ink/40">Coming Soon</p><h3 className="mt-3 font-display text-3xl">{name}</h3></div>)}
+        <div className="mt-10 grid gap-4 md:grid-cols-2">
+          {['Dermaplaning','Radio Frequency'].map(name => <div key={name} className="surface p-6 sm:p-7"><p className="eyebrow text-ink/40">Coming Soon</p><h3 className="mt-3 font-display text-3xl">{name}</h3></div>)}
         </div>
-        <div className="mt-8"><Link to="/inquire" className="btn-dark">Start an Inquiry</Link></div>
+        <div className="mt-8"><Link to="/inquire" className="btn-dark w-full sm:w-auto">Start an Inquiry</Link></div>
       </section>
     </>
   )
