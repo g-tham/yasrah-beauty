@@ -33,7 +33,7 @@ export default function HomePage() {
       </Reveal>
 
       <Reveal>
-        <section className="mx-auto grid max-w-7xl gap-8 px-5 py-14 sm:py-18 lg:grid-cols-[0.8fr_1.2fr] lg:px-8 lg:py-28">
+        <section className="mx-auto grid max-w-7xl gap-8 px-5 py-14 sm:py-16 lg:grid-cols-[0.8fr_1.2fr] lg:px-8 lg:py-28">
           <div><p className="eyebrow text-ink/45">The Yasrah Standard</p></div>
           <div>
             <h2 className="section-title">Where beauty becomes an expression of authenticity.</h2>
@@ -43,7 +43,7 @@ export default function HomePage() {
       </Reveal>
 
       <section className="bg-smoke text-bone">
-        <div className="mx-auto max-w-7xl px-5 py-14 sm:py-18 lg:px-8 lg:py-28">
+        <div className="mx-auto max-w-7xl px-5 py-14 sm:py-16 lg:px-8 lg:py-28">
           <Reveal>
             <div className="mb-10 flex items-end justify-between gap-8">
               <div>
@@ -76,7 +76,7 @@ export default function HomePage() {
       </section>
 
       <Reveal>
-        <section className="mx-auto max-w-7xl px-5 py-14 sm:py-18 lg:px-8 lg:py-28">
+        <section className="mx-auto max-w-7xl px-5 py-14 sm:py-16 lg:px-8 lg:py-28">
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
             <PlaceholderImage label="About Yasrah Beauty" className="aspect-[5/4] sm:aspect-[5/6]" />
             <div className="lg:pl-12">
