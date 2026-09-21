@@ -23,10 +23,12 @@ const treatments = [
   },
   {
     name: 'Dermaplaning',
+    summary: 'A non-invasive exfoliation treatment that gently removes dead skin cells and fine facial hair from the skin’s surface, helping the complexion look smoother, brighter and more refreshed.',
     comingSoon: true,
   },
   {
     name: 'Radio Frequency',
+    summary: 'A non-invasive aesthetic treatment that uses controlled radiofrequency energy to gently heat deeper layers of the skin, with the goal of supporting collagen production and improving firmness, texture and overall skin appearance.',
     comingSoon: true,
   },
 ]
