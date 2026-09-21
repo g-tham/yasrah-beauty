@@ -51,7 +51,6 @@ export default function ClinicalPage() {
         <div className="mt-12 grid gap-4 md:grid-cols-2">
           {['Dermaplaning','Radio Frequency'].map(name => <div key={name} className="surface p-7"><p className="eyebrow text-ink/40">Coming Soon</p><h3 className="mt-3 font-display text-3xl">{name}</h3><p className="body-copy mt-3">Service details were not yet provided in the website guidelines.</p></div>)}
         </div>
-        <div className="mt-10 bg-ink p-6 text-sm leading-6 text-bone/75">Important: clinical treatment copy, claims, contraindications, pre-care and post-care should be reviewed by the treating professional before this site is published. The current build follows the supplied Yasrah Beauty document and intentionally does not add outside medical guidance.</div>
         <div className="mt-8"><Link to="/inquire" className="btn-dark">Start an Inquiry</Link></div>
       </section>
     </>
