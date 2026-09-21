@@ -22,6 +22,17 @@ export default function HomePage() {
       </section>
 
       <Reveal>
+        <section className="border-b border-ink/10 bg-[#ded9d2]">
+          <div className="mx-auto max-w-6xl px-5 py-16 text-center sm:py-20 lg:px-8 lg:py-24">
+            <p className="eyebrow text-ink/40">The Yasrah Beauty Slogan</p>
+            <blockquote className="mx-auto mt-6 max-w-5xl font-display text-4xl leading-[1.05] text-ink sm:text-5xl lg:text-6xl">
+              “YOU ARE LOVE, TO FEEL LOVE, TO SEE LOVE, TO BE LOVE”
+            </blockquote>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal>
         <section className="mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[0.8fr_1.2fr] lg:px-8 lg:py-28">
           <div><p className="eyebrow text-ink/45">The Yasrah Standard</p></div>
           <div>
