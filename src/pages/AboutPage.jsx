@@ -46,19 +46,12 @@ export default function AboutPage() {
           <div className="surface p-8 sm:p-10">
             <p className="eyebrow text-ink/45">What We Do</p>
             <h3 className="mt-4 font-display text-4xl">Professional beauty aesthetics.</h3>
-            <p className="body-copy mt-5">Yasrah Beauty currently centres its website experience around Bridal Makeup & Hair and Clinical Aesthetics, with Waxing & Threading reserved for a later build.</p>
+            <p className="body-copy mt-5">Yasrah Beauty currently centres its website experience around Bridal Makeup & Hair and Clinical Aesthetics, with Waxing & Threading coming soon.</p>
           </div>
           <div className="surface p-8 sm:p-10">
             <p className="eyebrow text-ink/45">Meet The Artist</p>
             <h3 className="mt-4 font-display text-4xl">Profile coming soon.</h3>
           </div>
-        </div>
-      </section>
-
-      <section className="border-t border-ink/10 bg-white/30">
-        <div className="mx-auto max-w-5xl px-5 py-16 text-center lg:px-8 lg:py-20">
-          <p className="eyebrow text-ink/45">You are love</p>
-          <p className="mt-5 font-display text-4xl italic sm:text-5xl">“To feel love, to see love, to be love.”</p>
         </div>
       </section>
     </>
