@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import Link from '../components/SiteLink'
 import PageHero from '../components/PageHero'
 
 const treatments = [

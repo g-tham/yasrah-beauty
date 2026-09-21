@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import Link from '../components/SiteLink'
 import PageHero from '../components/PageHero'
 import PlaceholderImage from '../components/PlaceholderImage'
 import Reveal from '../components/Reveal'
