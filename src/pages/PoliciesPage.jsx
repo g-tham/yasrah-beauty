@@ -74,15 +74,7 @@ export default function PoliciesPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-14 sm:py-20 lg:px-8 lg:py-24">
-        <div className="grid gap-5 md:grid-cols-2">
-          <div className="surface p-6 sm:p-8">
-            <p className="eyebrow text-ink/40">Additional Policies</p>
-            <h3 className="mt-3 font-display text-3xl">Coming soon.</h3>
-            <p className="body-copy mt-4">
-              Additional Yasrah Beauty policies will be added here as they are finalized.
-            </p>
-          </div>
-
+        <div>
           <div className="surface flex flex-col justify-between p-6 sm:p-8">
             <div>
               <p className="eyebrow text-ink/40">Complete Policy Document</p>
