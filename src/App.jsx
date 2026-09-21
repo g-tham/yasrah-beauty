@@ -13,6 +13,10 @@ import PortfolioPage from './pages/PortfolioPage'
 import CoursesPage from './pages/CoursesPage'
 import InquiryPage from './pages/InquiryPage'
 
+// Build credit retained in source by request.
+const R3SYNERGY_BUILD_CREDIT = 'Built by R3Synergy Inc.'
+void R3SYNERGY_BUILD_CREDIT
+
 function ScrollToTop() {
   const { pathname } = useLocation()
   useEffect(() => window.scrollTo(0, 0), [pathname])

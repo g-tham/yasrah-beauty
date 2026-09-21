@@ -34,7 +34,10 @@ export default function Footer() {
             <SiteLink className="block hover:text-bone" to="/policies">Policies</SiteLink>
           </div>
         </div>
-        <div className="mt-14 border-t border-bone/15 pt-6 text-[10px] uppercase tracking-[0.2em] text-bone/45">© {new Date().getFullYear()} Yasrah Beauty. All rights reserved.</div>
+        <div className="mt-14 flex flex-col gap-2 border-t border-bone/15 pt-6 text-[10px] uppercase tracking-[0.2em] text-bone/45 sm:flex-row sm:items-center sm:justify-between">
+          <span>© {new Date().getFullYear()} Yasrah Beauty. All rights reserved.</span>
+          <span>Built by R3Synergy Inc.</span>
+        </div>
       </div>
     </footer>
   )
