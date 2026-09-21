@@ -37,7 +37,7 @@ export default function BridalPage() {
 
       <section className="bg-smoke text-bone">
         <div className="mx-auto grid max-w-7xl gap-4 px-5 py-12 sm:py-16 md:grid-cols-3 lg:px-8 lg:py-28">
-          {[1,2,3].map(n => <PlaceholderImage key={n} label={`Bridal portfolio ${n}`} className={`aspect-[5/4] sm:aspect-[4/5] ${n===2 ? 'md:mt-14' : ''}` />)}
+          {[1,2,3].map(n => <PlaceholderImage key={n} label={`Bridal portfolio ${n}`} className={`aspect-[5/4] sm:aspect-[4/5] ${n===2 ? 'md:mt-14' : ''}`} />)}
         </div>
       </section>
     </>
