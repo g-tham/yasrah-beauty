@@ -35,7 +35,7 @@ export default function PortfolioPage() {
           ))}
         </div>
         <div className="mt-12 flex flex-col items-start justify-between gap-8 border-t border-ink/10 pt-10 sm:flex-row sm:items-center">
-          <div><p className="eyebrow text-ink/45">Like the direction?</p><h3 className="mt-3 font-display text-3xl sm:text-4xl">Begin your Yasrah Beauty inquiry.</h3></div>
+          <div><h3 className="font-display text-3xl sm:text-4xl">Begin your Yasrah Beauty inquiry.</h3></div>
           <Link to="/inquire" className="btn-dark w-full sm:w-auto">Inquire Now</Link>
         </div>
       </section>
