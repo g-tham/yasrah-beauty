@@ -9,7 +9,7 @@ export default function InquiryPage() {
       <PageHero eyebrow="Inquire Now" title="Tell us what you’re envisioning." body="This is a front-end demo form. It can later be connected to email, a CRM, a booking platform or a form service." />
       <section className="mx-auto max-w-4xl px-5 py-20 lg:px-8">
         {sent ? (
-          <div className="surface p-10 text-center"><p className="eyebrow text-ink/40">Demo Submitted</p><h2 className="mt-4 font-display text-4xl">Thank you.</h2><p className="body-copy mt-4">This demo does not send data anywhere yet. The production version can be connected when Yasrah Beauty chooses its booking workflow.</p></div>
+          <div className="surface p-10 text-center"><h2 className="font-display text-4xl">Thank you.</h2><p className="body-copy mt-4">Demo submitted — this form does not send data anywhere yet.</p></div>
         ) : (
           <form onSubmit={submit} className="grid gap-6">
             <div className="grid gap-6 sm:grid-cols-2">

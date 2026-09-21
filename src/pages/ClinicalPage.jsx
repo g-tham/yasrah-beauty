@@ -49,7 +49,7 @@ export default function ClinicalPage() {
       <section className="mx-auto max-w-6xl px-5 py-16 lg:px-8 lg:py-24">
         {treatments.map(t => <Treatment key={t.name} t={t} />)}
         <div className="mt-12 grid gap-4 md:grid-cols-2">
-          {['Dermaplaning','Radio Frequency'].map(name => <div key={name} className="surface p-7"><p className="eyebrow text-ink/40">Coming Soon</p><h3 className="mt-3 font-display text-3xl">{name}</h3><p className="body-copy mt-3">Service details were not yet provided in the website guidelines.</p></div>)}
+          {['Dermaplaning','Radio Frequency'].map(name => <div key={name} className="surface p-7"><p className="eyebrow text-ink/40">Coming Soon</p><h3 className="mt-3 font-display text-3xl">{name}</h3></div>)}
         </div>
         <div className="mt-8"><Link to="/inquire" className="btn-dark">Start an Inquiry</Link></div>
       </section>

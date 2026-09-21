@@ -15,7 +15,6 @@ export default function PoliciesPage() {
             <p>All cancellations must be submitted in written form by email.</p>
           </div>
         </div>
-        <div className="mt-8 bg-ink px-6 py-5 text-sm leading-6 text-bone/75">Publishing note: the complete contract language should be reviewed by Yasrah Beauty before launch. This page is a web-friendly presentation of the provided guidelines, not a replacement for the signed contract.</div>
       </section>
     </>
   )

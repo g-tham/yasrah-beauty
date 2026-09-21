@@ -51,7 +51,6 @@ export default function AboutPage() {
           <div className="surface p-8 sm:p-10">
             <p className="eyebrow text-ink/45">Meet The Artist</p>
             <h3 className="mt-4 font-display text-4xl">Profile coming soon.</h3>
-            <p className="body-copy mt-5">This space is intentionally reserved for the approved founder or artist biography and portrait once Yasrah Beauty is ready to add them.</p>
           </div>
         </div>
       </section>

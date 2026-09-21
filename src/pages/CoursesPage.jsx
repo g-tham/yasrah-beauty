@@ -11,7 +11,7 @@ export default function CoursesPage() {
           <div className="max-w-4xl">
             <p className="eyebrow text-bone/55">Yasrah Beauty Education</p>
             <h1 className="display-title mt-4">Courses are coming soon.</h1>
-            <p className="mt-6 max-w-xl text-sm leading-7 text-bone/75 sm:text-base">The original website brief marks Courses as “Coming Soon.” This page is ready for the approved course offering when it is finalized.</p>
+            <p className="mt-6 max-w-xl text-sm leading-7 text-bone/75 sm:text-base">Coming soon.</p>
           </div>
         </div>
       </section>
@@ -21,7 +21,7 @@ export default function CoursesPage() {
           <div><p className="eyebrow text-ink/45">Future Education</p></div>
           <div>
             <h2 className="section-title">A polished home for Yasrah Beauty education.</h2>
-            <p className="body-copy mt-6 max-w-2xl">Course names, curriculum, dates, pricing and enrolment details have not been supplied yet, so this build keeps those items intentionally open instead of inventing them.</p>
+            <p className="body-copy mt-6 max-w-2xl">Coming soon.</p>
           </div>
         </div>
 

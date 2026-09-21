@@ -32,7 +32,7 @@ export default function PortfolioPage() {
           {[
             ['Bridal Portfolio','Reserved for approved bridal makeup and hair imagery.'],
             ['Beauty Details','Reserved for close-up artistry and detail photography.'],
-            ['Full Gallery','Final categories can be organized once the complete photo set is supplied.']
+            ['Full Gallery','Coming soon.']
           ].map(([title, body], i) => (
             <div key={title} className="border-t border-ink/15 pt-5">
               <div className="text-[10px] text-ink/35">0{i+1}</div>
