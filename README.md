@@ -1,56 +1,54 @@
-# Yasrah Beauty Website — GitHub Pages Ready
+# Yasrah Beauty
 
-Luxury bridal + clinical aesthetics website concept based on the Yasrah Beauty guidelines.
+Website for Yasrah Beauty, focused on bridal makeup and hair and clinical aesthetics.
 
-## Stack
+Live site: https://g-tham.github.io/yasrah-beauty/
+
+## Tech
+
 - React
 - Vite
 - Tailwind CSS
 - React Router
 
-## GitHub Pages
-This version is already configured for a GitHub repository named `yasrah-beauty`.
+## Local development
 
-- Vite base path: `/yasrah-beauty/`
-- GitHub Pages deployment workflow: `.github/workflows/deploy.yml`
-- Routing uses `HashRouter` so refreshing internal pages works reliably on GitHub Pages.
-
-After pushing the project to GitHub, go to:
-
-**Repository → Settings → Pages → Build and deployment → Source → GitHub Actions**
-
-The site will then deploy automatically whenever changes are pushed to the `main` branch.
-
-Your public URL will usually be:
-
-`https://YOUR-GITHUB-USERNAME.github.io/yasrah-beauty/`
-
-## Run locally
 ```bash
 npm install
 npm run dev
 ```
 
-## Included pages
+## Deployment
+
+The site is deployed to GitHub Pages through GitHub Actions.
+
+Pushing to `main` automatically triggers a new deployment.
+
+Vite is configured with the `/yasrah-beauty/` base path and routing uses `HashRouter` for GitHub Pages compatibility.
+
+## Pages
+
 - Home
 - About
-- FAQ placeholder
+- FAQ
 - Policies
 - Bridal Makeup & Hair
 - Clinical Aesthetics
-- Portfolio placeholder gallery
-- Courses — Coming Soon
-- Inquiry form demo
+- Portfolio
+- Courses
+- Inquiry
 
-## Logo
-The header currently uses the text wordmark `YASRAH BEAUTY`. Replace it later with the final logo.
+## Current status
 
-## Photography
-Photography is represented with editorial placeholders for now.
+The main site structure and responsive layouts are in place.
 
-## Important pre-launch notes
-- The inquiry form is front-end only and does not send data yet.
-- FAQ copy is intentionally not invented because no approved FAQ content was supplied.
-- Dermaplaning and Radio Frequency are placeholders because the supplied document only names those services.
-- Clinical aesthetics claims, contraindications, pre-care/post-care, and pricing should be reviewed by the treating professional before publication.
-- Legal/policy language should be reviewed by Yasrah Beauty before launch.
+Still pending:
+
+- Final Yasrah Beauty logo
+- Final photography
+- FAQ content
+- Course content
+- Inquiry form backend
+- Final review of clinical treatment and policy copy
+
+Dermaplaning, Radio Frequency, Waxing & Threading, and Courses are currently marked as coming soon.
