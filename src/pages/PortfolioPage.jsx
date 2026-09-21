@@ -20,16 +20,8 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-14 sm:py-16 lg:px-8 lg:py-28">
-        <div className="grid gap-8 md:grid-cols-3">
-          {['Bridal','Beauty Details','Full Gallery'].map((title) => (
-            <div key={title} className="border-t border-ink/15 pt-5">
-              <h3 className="font-display text-3xl">{title}</h3>
-              <p className="body-copy mt-3">Coming soon.</p>
-            </div>
-          ))}
-        </div>
-        <div className="mt-12 flex flex-col items-start justify-between gap-8 border-t border-ink/10 pt-10 sm:flex-row sm:items-center">
+      <section className="mx-auto max-w-7xl px-5 py-14 sm:py-16 lg:px-8 lg:py-20">
+        <div className="flex flex-col items-start justify-between gap-8 border-t border-ink/10 pt-10 sm:flex-row sm:items-center">
           <div><h3 className="font-display text-3xl sm:text-4xl">Ready to book?</h3></div>
           <Link to="/inquire" className="btn-dark w-full sm:w-auto">Inquire Now</Link>
         </div>
