@@ -27,7 +27,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-14 sm:py-18 lg:px-8 lg:py-28">
+      <section className="mx-auto max-w-7xl px-5 py-14 sm:py-16 lg:px-8 lg:py-28">
         <div className="grid gap-8 md:grid-cols-3">
           {[
             ['Bridal Portfolio','Reserved for approved bridal makeup and hair imagery.'],
