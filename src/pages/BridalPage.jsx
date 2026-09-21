@@ -19,7 +19,7 @@ export default function BridalPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-14 sm:py-18 lg:px-8 lg:py-28">
+      <section className="mx-auto max-w-7xl px-5 py-14 sm:py-16 lg:px-8 lg:py-28">
         <div className="grid gap-7 lg:grid-cols-[0.8fr_1.2fr]">
           <div><p className="eyebrow text-ink/45">How to Book</p></div>
           <div><h2 className="section-title">A clear, effortless path from inquiry to wedding day.</h2></div>
