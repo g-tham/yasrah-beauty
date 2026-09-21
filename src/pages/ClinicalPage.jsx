@@ -21,6 +21,14 @@ const treatments = [
     pricing: ['Face — $150','Chest — $160','Neck — $135','Hands — $120','Spot treatment (2 small spots) — $100','I FEEL RICH package — $400','TRIPLE THREAT package — $350','Add-on body part — $75'],
     benefits: ['Improves overall skin texture and tone','Helps reduce the appearance of fine lines','Supports the appearance of acne scar improvement','Minimizes the look of enlarged pores','Promotes firmer, smoother-looking skin'],
   },
+  {
+    name: 'Dermaplaning',
+    comingSoon: true,
+  },
+  {
+    name: 'Radio Frequency',
+    comingSoon: true,
+  },
 ]
 
 function Treatment({ t }) {
@@ -31,12 +39,18 @@ function Treatment({ t }) {
         <div><h2 className="font-display text-3xl sm:text-5xl">{t.name}</h2></div>
         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-ink/15 text-xl transition group-hover:border-ink/35">{open ? '−' : '+'}</span>
       </button>
-      <p className="body-copy mt-4 max-w-3xl">{t.summary}</p>
+      {t.summary && <p className="body-copy mt-4 max-w-3xl">{t.summary}</p>}
       {open && (
-        <div className="mt-6 grid gap-7 border-t border-ink/10 pt-6 md:grid-cols-2 md:gap-10">
-          <div><p className="eyebrow text-ink/45">Benefits</p><ul className="mt-4 space-y-3 text-sm leading-6 text-ink/70">{t.benefits.map(x => <li key={x} className="border-b border-ink/10 pb-3">{x}</li>)}</ul></div>
-          <div><p className="eyebrow text-ink/45">Pricing</p><ul className="mt-4 space-y-3 text-sm leading-6 text-ink/70">{t.pricing.map(x => <li key={x} className="border-b border-ink/10 pb-3">{x}</li>)}</ul></div>
-        </div>
+        t.comingSoon ? (
+          <div className="mt-6 border-t border-ink/10 pt-6">
+            <p className="body-copy">Coming soon.</p>
+          </div>
+        ) : (
+          <div className="mt-6 grid gap-7 border-t border-ink/10 pt-6 md:grid-cols-2 md:gap-10">
+            <div><p className="eyebrow text-ink/45">Benefits</p><ul className="mt-4 space-y-3 text-sm leading-6 text-ink/70">{t.benefits.map(x => <li key={x} className="border-b border-ink/10 pb-3">{x}</li>)}</ul></div>
+            <div><p className="eyebrow text-ink/45">Pricing</p><ul className="mt-4 space-y-3 text-sm leading-6 text-ink/70">{t.pricing.map(x => <li key={x} className="border-b border-ink/10 pb-3">{x}</li>)}</ul></div>
+          </div>
+        )
       )}
     </article>
   )
@@ -48,9 +62,6 @@ export default function ClinicalPage() {
       <PageHero title="Clinical Aesthetics" body="Laser hair removal, skin rejuvenation and microneedling, with more treatments coming soon." />
       <section className="mx-auto max-w-6xl px-5 py-12 sm:py-16 lg:px-8 lg:py-24">
         {treatments.map(t => <Treatment key={t.name} t={t} />)}
-        <div className="mt-10 grid gap-4 md:grid-cols-2">
-          {['Dermaplaning','Radio Frequency'].map(name => <div key={name} className="surface p-6 sm:p-7"><p className="eyebrow text-ink/40">Coming Soon</p><h3 className="mt-3 font-display text-3xl">{name}</h3></div>)}
-        </div>
         <div className="mt-8"><Link to="/inquire" className="btn-dark w-full sm:w-auto">Start an Inquiry</Link></div>
       </section>
     </>
