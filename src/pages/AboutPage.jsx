@@ -24,15 +24,13 @@ export default function AboutPage() {
 
       <section className="bg-smoke text-bone">
         <div className="mx-auto max-w-7xl px-5 py-14 sm:py-16 lg:px-8 lg:py-24">
-          <div className="grid gap-8 lg:grid-cols-[0.65fr_1.35fr]">
-            <div><p className="eyebrow text-bone/45">Our Values</p></div>
-            <div><h2 className="font-display text-4xl leading-none sm:text-6xl">What we care about.</h2></div>
+          <div className="text-center">
+            <p className="eyebrow text-bone/45">Our Values</p>
           </div>
           <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-7 sm:grid-cols-3 lg:grid-cols-5">
-            {values.map((value, i) => (
-              <div key={value} className="border-t border-bone/20 pt-4">
-                <span className="text-[10px] text-bone/35">{String(i+1).padStart(2,'0')}</span>
-                <div className="mt-2 font-display text-2xl">{value}</div>
+            {values.map((value) => (
+              <div key={value} className="border-t border-bone/20 pt-5 text-center">
+                <div className="font-display text-2xl">{value}</div>
               </div>
             ))}
           </div>
