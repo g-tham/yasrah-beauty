@@ -15,10 +15,26 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-ink/10 bg-bone/90 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <SiteLink to="/" className="font-display text-2xl tracking-[0.16em]">YASRAH BEAUTY</SiteLink>
+      <div className="mx-auto max-w-7xl px-5 py-4 lg:px-8">
+        <div className="relative flex items-center justify-center lg:hidden">
+          <SiteLink to="/" className="font-display text-xl tracking-[0.2em]">YASRAH BEAUTY</SiteLink>
+          <button
+            onClick={() => setOpen(v => !v)}
+            className="absolute right-0 flex h-9 w-9 items-center justify-center"
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            aria-expanded={open}
+          >
+            <span className="relative block h-3.5 w-5">
+              <span className={`absolute left-0 top-1 block h-px w-5 bg-ink transition duration-300 ${open ? 'translate-y-[3px] rotate-45' : ''}`} />
+              <span className={`absolute left-0 bottom-1 block h-px w-5 bg-ink transition duration-300 ${open ? '-translate-y-[3px] -rotate-45' : ''}`} />
+            </span>
+          </button>
+        </div>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <div className="hidden items-center justify-between lg:flex">
+          <SiteLink to="/" className="font-display text-2xl tracking-[0.16em]">YASRAH BEAUTY</SiteLink>
+
+          <nav className="flex items-center gap-7">
           <SiteLink to="/" className={navClass('/')}>Home</SiteLink>
 
           <div className="relative" onMouseEnter={() => setAboutOpen(true)} onMouseLeave={() => setAboutOpen(false)}>
@@ -61,27 +77,32 @@ export default function Header() {
           <SiteLink to="/portfolio" className={navClass('/portfolio')}>Portfolio</SiteLink>
           <span className="cursor-not-allowed text-[11px] uppercase tracking-[0.18em] text-ink/25" aria-disabled="true">Courses</span>
           <SiteLink to="/inquire" className="btn-dark !px-5 !py-3">Inquire Now</SiteLink>
-        </nav>
-
-        <button onClick={() => setOpen(v => !v)} className="lg:hidden text-xs uppercase tracking-[0.2em]">{open ? 'Close' : 'Menu'}</button>
+          </nav>
+        </div>
       </div>
 
       {open && (
-        <div className="border-t border-ink/10 bg-bone px-5 py-6 lg:hidden">
-          <div className="grid gap-4">
-            <SiteLink onClick={closeMobile} to="/">Home</SiteLink>
-            <SiteLink onClick={closeMobile} to="/about">About</SiteLink>
-            <div className="ml-4 grid gap-3 border-l border-ink/10 pl-4 text-sm text-ink/60">
+        <div className="border-t border-ink/10 bg-bone/98 px-6 py-8 backdrop-blur-xl lg:hidden">
+          <div className="mx-auto grid max-w-sm gap-6 text-center">
+            <SiteLink onClick={closeMobile} to="/" className="font-display text-2xl">Home</SiteLink>
+            <SiteLink onClick={closeMobile} to="/about" className="font-display text-2xl">About</SiteLink>
+
+            <div className="grid gap-3 text-sm text-ink/55">
               <SiteLink onClick={closeMobile} to="/faq">FAQ</SiteLink>
               <SiteLink onClick={closeMobile} to="/policies">Policies</SiteLink>
             </div>
-            <div className="text-sm uppercase tracking-[0.16em] text-ink/55">Services</div>
-            <div className="ml-4 grid gap-3 border-l border-ink/10 pl-4 text-sm text-ink/60">
-              <SiteLink onClick={closeMobile} to="/services/bridal">Bridal Makeup & Hair</SiteLink>
-              <SiteLink onClick={closeMobile} to="/services/clinical">Clinical Aesthetics</SiteLink>
+
+            <div className="mt-1 border-t border-ink/10 pt-6">
+              <div className="eyebrow text-ink/35">Services</div>
+              <div className="mt-4 grid gap-3 text-sm">
+                <SiteLink onClick={closeMobile} to="/services/bridal">Bridal Makeup & Hair</SiteLink>
+                <SiteLink onClick={closeMobile} to="/services/clinical">Clinical Aesthetics</SiteLink>
+                <span className="text-ink/30" aria-disabled="true">Waxing & Threading</span>
+              </div>
             </div>
-            <SiteLink onClick={closeMobile} to="/portfolio">Portfolio</SiteLink>
-            <span className="cursor-not-allowed text-ink/30" aria-disabled="true">Courses</span>
+
+            <SiteLink onClick={closeMobile} to="/portfolio" className="font-display text-2xl">Portfolio</SiteLink>
+            <span className="font-display text-2xl text-ink/25" aria-disabled="true">Courses</span>
             <SiteLink onClick={closeMobile} to="/inquire" className="btn-dark mt-2 w-full">Inquire Now</SiteLink>
           </div>
         </div>
