@@ -10,7 +10,7 @@ export default function AboutPage() {
     <>
       <PageHero eyebrow="About Yasrah Beauty" title="A beauty experience rooted in authenticity." body="Yasrah Beauty is a professional beauty aesthetics company built around intentional service, refined artistry and client-centred care." />
 
-      <section className="mx-auto grid max-w-7xl gap-8 px-5 py-14 sm:py-18 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:py-28">
+      <section className="mx-auto grid max-w-7xl gap-8 px-5 py-14 sm:py-16 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:py-28">
         <Reveal className="order-2 lg:order-1"><PlaceholderImage label="Yasrah Beauty portrait placeholder" className="aspect-[5/4] sm:aspect-[4/5]" /></Reveal>
         <Reveal className="order-1 lg:order-2 lg:pt-12">
           <p className="eyebrow text-ink/45">Our Purpose</p>
@@ -24,7 +24,7 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-smoke text-bone">
-        <div className="mx-auto max-w-7xl px-5 py-14 sm:py-18 lg:px-8 lg:py-24">
+        <div className="mx-auto max-w-7xl px-5 py-14 sm:py-16 lg:px-8 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[0.65fr_1.35fr]">
             <div><p className="eyebrow text-bone/45">Our Values</p></div>
             <div><h2 className="font-display text-4xl leading-none sm:text-6xl">The standard behind every client experience.</h2></div>
@@ -40,7 +40,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-14 sm:py-18 lg:px-8 lg:py-28">
+      <section className="mx-auto max-w-7xl px-5 py-14 sm:py-16 lg:px-8 lg:py-28">
         <div className="grid gap-8 md:grid-cols-2">
           <div className="surface p-6 sm:p-10">
             <p className="eyebrow text-ink/45">What We Do</p>
