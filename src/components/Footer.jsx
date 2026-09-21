@@ -4,9 +4,9 @@ export default function Footer() {
   return (
     <footer className="bg-ink text-bone">
       <div className="border-b border-bone/10">
-        <div className="mx-auto max-w-7xl px-5 py-12 text-center lg:px-8 lg:py-16">
+        <div className="mx-auto max-w-7xl px-5 py-8 text-center lg:px-8 lg:py-10">
           <p className="eyebrow text-bone/35">Yasrah Beauty</p>
-          <p className="mx-auto mt-4 max-w-5xl font-display text-3xl leading-tight text-bone/90 sm:text-4xl lg:text-5xl">
+          <p className="mx-auto mt-3 max-w-4xl font-display text-2xl leading-tight text-bone/85 sm:text-3xl lg:text-4xl">
             “YOU ARE LOVE, TO FEEL LOVE, TO SEE LOVE, TO BE LOVE”
           </p>
         </div>
