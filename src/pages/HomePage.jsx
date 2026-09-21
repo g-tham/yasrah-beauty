@@ -12,7 +12,7 @@ export default function HomePage() {
           <div className="max-w-4xl">
             <p className="hero-kicker eyebrow text-bone/70">Bridal Artistry · Clinical Aesthetics</p>
             <h1 className="hero-title display-title mt-4">Beauty, authentically yours.</h1>
-            <p className="hero-copy mt-6 max-w-xl text-sm leading-7 text-bone/80 sm:text-base">A refined beauty experience designed to make every client feel embraced, valued and celebrated in their own unique essence.</p>
+            <p className="hero-copy mt-6 max-w-xl text-sm leading-7 text-bone/80 sm:text-base">Bridal makeup, hair and clinical aesthetics with a focus on thoughtful, personalized care.</p>
             <div className="hero-actions mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link to="/inquire" className="btn-light w-full sm:w-auto">Inquire Now</Link>
               <Link to="/services/bridal" className="btn-light w-full sm:w-auto">Explore Bridal</Link>
@@ -25,8 +25,7 @@ export default function HomePage() {
       <Reveal>
         <section className="border-b border-ink/10 bg-[#ded9d2]">
           <div className="mx-auto max-w-6xl px-5 py-12 text-center sm:py-16 lg:px-8 lg:py-24">
-            <p className="eyebrow text-ink/40">The Yasrah Beauty Slogan</p>
-            <blockquote className="mx-auto mt-5 max-w-5xl font-display text-3xl leading-[1.08] text-ink sm:text-5xl lg:text-6xl">
+            <blockquote className="mx-auto max-w-5xl font-display text-3xl leading-[1.08] text-ink sm:text-5xl lg:text-6xl">
               “YOU ARE LOVE, TO FEEL LOVE, TO SEE LOVE, TO BE LOVE”
             </blockquote>
           </div>
@@ -34,25 +33,16 @@ export default function HomePage() {
       </Reveal>
 
       <Reveal>
-        <section className="mx-auto grid max-w-7xl gap-8 px-5 py-14 sm:py-16 lg:grid-cols-[0.8fr_1.2fr] lg:px-8 lg:py-28">
-          <div><p className="eyebrow text-ink/45">The Yasrah Standard</p></div>
-          <div>
-            <h2 className="section-title">Where beauty becomes an expression of authenticity.</h2>
-            <p className="body-copy mt-7 max-w-2xl">Modern, timeless and client-centred — Yasrah Beauty combines refined artistry with intentional care across bridal services and clinical aesthetics.</p>
+        <section className="mx-auto max-w-7xl px-5 py-14 sm:py-16 lg:px-8 lg:py-28">
+          <div className="max-w-3xl lg:ml-auto">
+            <h2 className="section-title">Bridal artistry and clinical aesthetics, with care at the centre.</h2>
+            <p className="body-copy mt-7 max-w-2xl">Yasrah Beauty offers bridal makeup and hair alongside clinical aesthetic treatments, with each service shaped around the client.</p>
           </div>
         </section>
       </Reveal>
 
       <section className="bg-smoke text-bone">
         <div className="mx-auto max-w-7xl px-5 py-14 sm:py-16 lg:px-8 lg:py-28">
-          <Reveal>
-            <div className="mb-10 flex items-end justify-between gap-8">
-              <div>
-                <p className="eyebrow text-bone/45">Signature Services</p>
-                <h2 className="mt-4 font-display text-4xl sm:text-6xl">Two worlds. One philosophy.</h2>
-              </div>
-            </div>
-          </Reveal>
           <div className="grid gap-6 md:grid-cols-2">
             <Reveal>
               <Link to="/services/bridal" className="luxury-card group block">
@@ -78,12 +68,11 @@ export default function HomePage() {
 
       <Reveal>
         <section className="mx-auto max-w-7xl px-5 py-14 sm:py-16 lg:px-8 lg:py-28">
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
             <PlaceholderImage label="About Yasrah Beauty" className="aspect-[5/4] sm:aspect-[5/6]" />
-            <div className="lg:pl-12">
-              <p className="eyebrow text-ink/45">Our Philosophy</p>
-              <h2 className="section-title mt-4">Dark feminine. Timeless. Intentional.</h2>
-              <p className="body-copy mt-6">The Yasrah Beauty experience is built around trust, integrity, transparency, authenticity, respect and compassion — with every detail centred on the client.</p>
+            <div className="lg:pl-8 lg:pt-24">
+              <h2 className="section-title">What matters to us.</h2>
+              <p className="body-copy mt-6">Trust, transparency, authenticity, respect and compassion guide how Yasrah Beauty works with every client.</p>
               <Link to="/about" className="btn-outline mt-8 w-full sm:w-auto">Discover Yasrah</Link>
             </div>
           </div>
@@ -92,8 +81,7 @@ export default function HomePage() {
 
       <section className="border-t border-ink/10 bg-white/30">
         <div className="mx-auto max-w-7xl px-5 py-14 text-center lg:px-8 lg:py-20">
-          <p className="eyebrow text-ink/45">Ready when you are</p>
-          <h2 className="mt-4 font-display text-4xl sm:text-6xl">Begin your Yasrah Beauty experience.</h2>
+          <h2 className="font-display text-4xl sm:text-6xl">Ready to get started?</h2>
           <Link to="/inquire" className="btn-dark mt-8 w-full sm:w-auto">Inquire Now</Link>
         </div>
       </section>

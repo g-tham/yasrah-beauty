@@ -33,15 +33,13 @@ export default function PoliciesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Client Policies"
-        title="Clear expectations. Thoughtful care."
-        body="Policies designed to keep every booking clear, respectful and seamless."
+        title="Policies"
+        body="A few key policies from the Yasrah Beauty bridal contract."
       />
 
       <section className="mx-auto max-w-6xl px-5 py-12 sm:py-16 lg:px-8 lg:py-20">
         <div className="surface p-6 sm:p-8">
-          <p className="eyebrow text-ink/45">A Note From Yasrah Beauty</p>
-          <p className="body-copy mt-4 max-w-4xl">
+          <p className="body-copy max-w-4xl">
             These are a few policies that you will find in your Yasrah Beauty Bridal contract.
             These are in place to protect Yasrah Beauty and our artists. If you have any questions
             or concerns, please feel free to reach out.
@@ -53,8 +51,7 @@ export default function PoliciesPage() {
         <div className="mx-auto max-w-6xl px-5 py-14 sm:py-20 lg:px-8 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
             <div>
-              <p className="eyebrow text-ink/45">Bridal Policy</p>
-              <h2 className="mt-4 font-display text-4xl leading-none sm:text-5xl">Cancellation Policy</h2>
+              <h2 className="font-display text-4xl leading-none sm:text-5xl">Cancellation Policy</h2>
 
             </div>
 
@@ -77,8 +74,7 @@ export default function PoliciesPage() {
         <div>
           <div className="surface flex flex-col justify-between p-6 sm:p-8">
             <div>
-              <p className="eyebrow text-ink/40">Complete Policy Document</p>
-              <h3 className="mt-3 font-display text-3xl">Full policies PDF.</h3>
+              <h3 className="font-display text-3xl">Full policies PDF</h3>
               <p className="body-copy mt-4">The complete policy document will be available once finalized.</p>
             </div>
             <button
@@ -94,8 +90,7 @@ export default function PoliciesPage() {
 
         <div className="mt-12 flex flex-col gap-6 border-t border-ink/10 pt-9 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="eyebrow text-ink/40">Questions about a policy?</p>
-            <h3 className="mt-3 font-display text-3xl sm:text-4xl">We’re here to help.</h3>
+            <h3 className="font-display text-3xl sm:text-4xl">Questions about a policy?</h3>
           </div>
           <Link to="/inquire" className="btn-dark w-full sm:w-auto">Inquire Now</Link>
         </div>

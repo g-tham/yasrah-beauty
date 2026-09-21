@@ -6,7 +6,7 @@ export default function InquiryPage() {
   const submit = (e) => { e.preventDefault(); setSent(true) }
   return (
     <>
-      <PageHero eyebrow="Inquire Now" title="Tell us what you’re envisioning." body="This is a front-end demo form. It can later be connected to email, a CRM, a booking platform or a form service." />
+      <PageHero title="Start an inquiry" body="Tell us a little about what you’re looking for." />
       <section className="mx-auto max-w-4xl px-5 py-14 sm:py-20 lg:px-8">
         {sent ? (
           <div className="surface p-7 text-center sm:p-10"><h2 className="font-display text-4xl">Thank you.</h2><p className="body-copy mt-4">Demo submitted — this form does not send data anywhere yet.</p></div>
@@ -22,6 +22,7 @@ export default function InquiryPage() {
             </div>
             <label className="text-xs uppercase tracking-[0.14em]">Tell us more<textarea rows="6" className="mt-2 w-full border border-ink/20 bg-transparent px-4 py-3 normal-case tracking-normal outline-none focus:border-ink" placeholder="Event details, treatment interest, questions…" /></label>
             <button className="btn-dark w-full sm:w-fit" type="submit">Submit Inquiry</button>
+            <p className="text-xs leading-5 text-ink/45">Preview only — submissions are not being sent yet.</p>
           </form>
         )}
       </section>

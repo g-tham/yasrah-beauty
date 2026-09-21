@@ -15,14 +15,13 @@ export default function BridalPage() {
         <PlaceholderImage label="Luxury bridal hero" className="mobile-hero-image absolute inset-0" />
         <div className="absolute inset-0 z-[1] bg-black/45" />
         <div className="relative z-10 mx-auto flex min-h-[64vh] sm:min-h-[70vh] lg:min-h-[72vh] max-w-7xl items-end px-5 pb-10 sm:pb-14 lg:px-8 lg:pb-20">
-          <div className="max-w-3xl"><p className="eyebrow text-bone/55">Bridal Makeup & Hair</p><h1 className="display-title mt-4">Your beauty. Elevated, never disguised.</h1><Link to="/inquire" className="btn-light mt-8 w-full sm:w-auto">Start Your Inquiry</Link></div>
+          <div className="max-w-3xl"><p className="eyebrow text-bone/55">Bridal Makeup & Hair</p><h1 className="display-title mt-4">Bridal makeup & hair, tailored to you.</h1><Link to="/inquire" className="btn-light mt-8 w-full sm:w-auto">Start Your Inquiry</Link></div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-14 sm:py-16 lg:px-8 lg:py-28">
-        <div className="grid gap-7 lg:grid-cols-[0.8fr_1.2fr]">
-          <div><p className="eyebrow text-ink/45">How to Book</p></div>
-          <div><h2 className="section-title">A clear, effortless path from inquiry to wedding day.</h2></div>
+        <div className="max-w-2xl">
+          <h2 className="section-title">How booking works.</h2>
         </div>
         <div className="mt-10 grid gap-px bg-ink/10 md:grid-cols-2 lg:grid-cols-4">
           {steps.map(([title, text], index) => (

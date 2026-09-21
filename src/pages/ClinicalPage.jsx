@@ -28,7 +28,7 @@ function Treatment({ t }) {
   return (
     <article className="border-t border-ink/15 py-6 sm:py-8">
       <button onClick={() => setOpen(!open)} className="group flex w-full items-center justify-between gap-5 py-1 text-left">
-        <div><p className="eyebrow text-ink/40">Treatment</p><h2 className="mt-2 font-display text-3xl sm:text-5xl">{t.name}</h2><p className="mt-2 text-[10px] uppercase tracking-[0.2em] text-ink/35">View details</p></div>
+        <div><h2 className="font-display text-3xl sm:text-5xl">{t.name}</h2></div>
         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-ink/15 text-xl transition group-hover:border-ink/35">{open ? '−' : '+'}</span>
       </button>
       <p className="body-copy mt-4 max-w-3xl">{t.summary}</p>
@@ -45,7 +45,7 @@ function Treatment({ t }) {
 export default function ClinicalPage() {
   return (
     <>
-      <PageHero eyebrow="Clinical Aesthetics" title="Where science meets holistic practice." body="Thoughtfully selected aesthetic treatments with a focus on education, care and an elevated client experience." />
+      <PageHero title="Clinical Aesthetics" body="Laser hair removal, skin rejuvenation and microneedling, with more treatments coming soon." />
       <section className="mx-auto max-w-6xl px-5 py-12 sm:py-16 lg:px-8 lg:py-24">
         {treatments.map(t => <Treatment key={t.name} t={t} />)}
         <div className="mt-10 grid gap-4 md:grid-cols-2">
