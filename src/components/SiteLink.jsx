@@ -1,12 +1,9 @@
 const BASE = import.meta.env.BASE_URL || '/yasrah-beauty/'
 
-function pageKey(to) {
-  if (!to || to === '/') return 'home'
-  return to.replace(/^\//, '').replace(/\//g, '-')
-}
-
 export default function SiteLink({ to, children, className = '', onClick, ...props }) {
-  const href = `${BASE}?page=${encodeURIComponent(pageKey(to))}#${to}`
+  const href = !to || to === '/'
+    ? BASE
+    : `${BASE}${to.replace(/^\/+/, '')}`
 
   return (
     <a href={href} className={className} onClick={onClick} {...props}>
