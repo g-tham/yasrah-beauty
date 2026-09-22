@@ -64,7 +64,7 @@ export default function ClinicalPage() {
       <PageHero title="Clinical Aesthetics" body="Laser hair removal, skin rejuvenation and microneedling, with more treatments coming soon." />
       <section className="mx-auto max-w-6xl px-5 py-12 sm:py-16 lg:px-8 lg:py-24">
         {treatments.map(t => <Treatment key={t.name} t={t} />)}
-        <div className="mt-8"><Link to="/inquire" className="btn-dark w-full sm:w-auto">Start an Inquiry</Link></div>
+        <div className="mt-8"><Link to="/inquire" className="btn-dark w-full sm:w-auto">Inquire Now</Link></div>
       </section>
     </>
   )
