@@ -30,11 +30,23 @@ jobs:
         with:
           node-version: 20
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm install
+          python -m pip install --disable-pip-version-check pillow
 
       - name: Build website
         run: npm run build
+
+      - name: Generate social preview
+        run: |
+          curl -L --fail --silent --show-error             https://raw.githubusercontent.com/CatharsisFonts/Cormorant/master/fonts/ttf/CormorantGaramond-Regular.ttf             -o /tmp/CormorantGaramond-Regular.ttf
+          python scripts/generate_og_preview.py /tmp/CormorantGaramond-Regular.ttf dist/yasrah-og-preview-v5.png
 
       - name: Add SPA fallback
         run: cp dist/index.html dist/404.html
