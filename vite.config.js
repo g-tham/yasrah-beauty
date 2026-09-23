@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  // GitHub Pages serves this project from /yasrah-beauty/
-  base: '/yasrah-beauty/',
+  // Custom domain serves the site from the root.
+  base: '/',
 })
