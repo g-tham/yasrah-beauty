@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
         <div className="mt-10 flex flex-col gap-2 border-t border-bone/15 pt-6 text-[10px] uppercase tracking-[0.2em] text-bone/45 sm:flex-row sm:items-center sm:justify-between">
           <span>© {new Date().getFullYear()} Yasrah Beauty. All rights reserved.</span>
-          <span>Built by R3Synergy Inc.</span>
+          <span>Original website designed &amp; developed by R3Synergy Inc.</span>
         </div>
       </div>
     </footer>

@@ -2,7 +2,13 @@
 
 Website for Yasrah Beauty, focused on bridal makeup and hair and clinical aesthetics.
 
-Live site: https://g-tham.github.io/yasrah-beauty/
+Live site: https://yasrahbeauty.com/
+
+## Attribution
+
+Original website design and development by **R3Synergy Inc.**
+
+The repository commit history documents the original development of this project. Please retain this attribution when the repository is transferred or maintained by a new owner.
 
 ## Tech
 
@@ -10,6 +16,7 @@ Live site: https://g-tham.github.io/yasrah-beauty/
 - Vite
 - Tailwind CSS
 - React Router
+- Python/Pillow, used only during deployment to generate the social share preview image
 
 ## Local development
 
@@ -24,7 +31,7 @@ The site is deployed to GitHub Pages through GitHub Actions.
 
 Pushing to `main` automatically triggers a new deployment.
 
-Vite is configured with the `/yasrah-beauty/` base path and routing uses `HashRouter` for GitHub Pages compatibility.
+The production site uses the custom domain `yasrahbeauty.com`. Routing uses `BrowserRouter`, with a generated `404.html` fallback for direct GitHub Pages routes.
 
 ## Pages
 
