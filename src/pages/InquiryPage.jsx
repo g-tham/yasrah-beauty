@@ -6,7 +6,7 @@ export default function InquiryPage() {
   const submit = (e) => { e.preventDefault(); setSent(true) }
   return (
     <>
-      <PageHero title="Start an inquiry" body="Tell us a little about what you’re looking for." />
+      {!sent && <PageHero title="Start an inquiry" body="Tell us a little about what you’re looking for." />}
       <section className="mx-auto max-w-4xl px-5 py-14 sm:py-20 lg:px-8">
         {sent ? (
           <div className="surface p-7 text-center sm:p-10"><h2 className="font-display text-4xl">Thank you.</h2><p className="body-copy mt-4">Demo submitted — this form does not send data anywhere yet.</p></div>
